@@ -1,0 +1,163 @@
+Liver.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Liver Tumor Detection</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f0f0f0;
+ background-image: url('liver\ img.jpg');
+ background-repeat: no-repeat;
+ height: 100%;
+ background-position: center;
+ background-size: cover;
+ }
+ .container {
+ max-width: 800px;
+ margin-left: 230px;
+ margin-top: 80px;
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.8);
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ text-align: center;
+
+ height: 300px;
+ }
+ h1 {
+ color: #333;
+ margin-bottom: 40px;
+ }
+ p {
+ color: #666;
+ margin-bottom: 20px;
+ }
+ .button {
+ display: inline-block;
+ margin-top: 40px;
+ margin-left: -10px;
+ padding: 10px 20px;
+ background-color: #007bff;
+ color: #fff;
+ text-decoration: none;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+ }
+ .button:hover {
+ background-color: #0056b3;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>Liver Tumor Detection</h1>
+
+ <p>Using deep learning algorithms for accurate tumor detection in liver 
+images.</p>
+ <p>This project aims to revolutionize the diagnosis and treatment of liver 
+tumors.</p>
+ <p>Join us in our mission to improve healthcare outcomes!</p>
+ <a href="#" class="button">Let's Go</a>
+ </div>
+</body>
+</html>
+Liver-page-2.html
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Liver Tumor Detection</title>
+ <style>
+ body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+ background-image: url('liver-img-2.jpg'); 
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }
+ #container {
+ background-color: rgb(245, 239, 239, 0.8); 
+ padding: 20px;
+ border-radius: 10px;
+ max-width: 1000px;
+ text-align: center;
+ box-shadow: 0 0 30px rgba(168, 164, 164, 0.5);
+ margin-top: -50px;
+ }
+ #result {
+ width: 60%;
+ margin-bottom: 10px;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ }
+ #fileInput {
+ display: none;
+ }
+ #chooseFileBtn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ }
+ #chooseFileBtn:hover {
+ background-color: #45a049;
+ }
+ #predictBtn {
+ background-color: #3498db;
+
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ }
+ #predictBtn:hover {
+ background-color: #2980b9;
+ }
+ .res-predict label{
+ margin-left: -570px;
+ font-weight: bold;
+ }
+ span{
+ font-style: italic;
+ padding-bottom: 20px;
+ } 
+ </style>
+</head>
+<body>
+ <div id="container">
+ <h1>Liver Tumor Detection</h1>
+ <p>Using Deep Learning Algorithms</p>
+ <p>This project aims to detect liver tumors from medical images using 
+advanced deep learning techniques. By leveraging deep neural networks, we 
+can achieve high accuracy and efficiency in identifying potential tumors in the 
+liver.</p>
+ <p><span>Upload a medical image below and click "Predict" to see the 
+detection results.</span></p>
+ <input type="file" id="fileInput">
+ <label for="fileInput" id="chooseFileBtn">Choose File</label>
+ <br><br>
+ <div class="res-predict">
+ <label for="textarea" id="text">Result</label>
+ </div>
+ <textarea id="result" rows="4" readonly></textarea>
+ <br>
+ <button id="predictBtn">Predict</button>
+ </div>
+</body>
+</html>
